@@ -24,6 +24,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
+        env:SAMPLE_EXAMPLE_PASSWORD:{{secrets.SAMPLE_EXAMPLE_PASSWORD}}
         run: echo Hello, world!
 
       # Runs a set of commands using the runners shell
